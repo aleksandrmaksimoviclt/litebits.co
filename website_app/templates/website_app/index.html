@@ -22,45 +22,19 @@
 						<img class="team-member-image" src="{{ member.img }}">
 						<h5 class="member-name">{{ member.name }}</h5>
 						<h6 class="member-job">{{ member.job }}</h6>
-						<p>{{ member.resume }}</p>
-						<a href="{{ member.facebook }}">Facebook</a>
-						<a href="{{ member.twitter }}">Twitter</a>
-						<a href="{{ member.linkedin }}">Linked In</a>
+						<p class="member-resume">{{ member.resume }}</p>
+						<div class="social-icon-wrapper">
+							<a href="{{ member.facebook }}"><img class="social-icon" src="{% static "website_app/img/facebook.png" %}"></a>	
+						</div>
+						<div class="social-icon-wrapper">
+							<a href="{{ member.twitter }}"><img class="social-icon" src="{% static "website_app/img/twitter.png" %}"></a>
+						</div>
+						<div class="social-icon-wrapper">
+							<a href="{{ member.linkedin }}"><img class="social-icon" src="{% static "website_app/img/linkedin.png" %}"></a>
+						</div>
 					</div>
 				{% endfor %}
-				{% for member in members %}
-					<div class="col s12 l3 member">
-						<img class="team-member-image" src="{{ member.img }}">
-						<h5 class="member-name">{{ member.name }}</h5>
-						<h6 class="member-job">{{ member.job }}</h6>
-						<p>{{ member.resume }}</p>
-						<a href="{{ member.facebook }}">Facebook</a>
-						<a href="{{ member.twitter }}">Twitter</a>
-						<a href="{{ member.linkedin }}">Linked In</a>
-					</div>
-				{% endfor %}
-				{% for member in members %}
-					<div class="col s12 l3 member">
-						<img class="team-member-image" src="{{ member.img }}">
-						<h5 class="member-name">{{ member.name }}</h5>
-						<h6 class="member-job">{{ member.job }}</h6>
-						<p>{{ member.resume }}</p>
-						<a href="{{ member.facebook }}">Facebook</a>
-						<a href="{{ member.twitter }}">Twitter</a>
-						<a href="{{ member.linkedin }}">Linked In</a>
-					</div>
-				{% endfor %}
-				{% for member in members %}
-					<div class="col s12 l3 member">
-						<img class="team-member-image" src="{{ member.img }}">
-						<h5 class="member-name">{{ member.name }}</h5>
-						<h6 class="member-job">{{ member.job }}</h6>
-						<p>{{ member.resume }}</p>
-						<a href="{{ member.facebook }}">Facebook</a>
-						<a href="{{ member.twitter }}">Twitter</a>
-						<a href="{{ member.linkedin }}">Linked In</a>
-					</div>
-				{% endfor %}
+
 			</div>
 		</div>
 	
