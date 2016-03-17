@@ -12,7 +12,7 @@ class Member(models.Model):
 	facebook = models.CharField(max_length=100, blank=True, null=True)
 	twitter = models.CharField(max_length=100, blank=True, null=True)
 	linkedin = models.CharField(max_length=100, blank=True, null=True)
-	img = models.ImageField(upload_to='members')
+	img = models.ImageField(upload_to='static/website_app/img/')
 
 	def __str__(self):
 		return self.name

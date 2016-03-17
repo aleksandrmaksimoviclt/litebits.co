@@ -1,0 +1,13 @@
+.member {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+}
+img.team-member-image {
+    width: 100%;
+}
+h5.member-name {
+    font-weight: 300;
+}
+h6.member-job {
+    font-weight: bold;
+}

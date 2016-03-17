@@ -11,19 +11,55 @@
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<!-- Materialize CSS Framework -->
 		<link href="{% static 'website_app/css/materialize.css' %}" type="text/css" rel="stylesheet" media="screen,projection"/>
+		<!-- Custom CSS -->
+		<link href="{% static 'website_app/css/custom.css' %}" type="text/css" rel="stylesheet" media="screen,projection"/>
 	</head>
 	<body>
 		<div id="team">
-			<div class="row">
+			<div class="row container">
 				{% for member in members %}
-					{{ member.name }}
-					{{ member.last_name }}
-					{{ member.job }}
-					{{ member.resume }}
-					{{ member.facebook }}
-					{{ member.twitter }}
-					{{ member.linkedin }}
-					{{ member.img }}
+					<div class="col s12 l3 member">
+						<img class="team-member-image" src="{{ member.img }}">
+						<h5 class="member-name">{{ member.name }}</h5>
+						<h6 class="member-job">{{ member.job }}</h6>
+						<p>{{ member.resume }}</p>
+						<a href="{{ member.facebook }}">Facebook</a>
+						<a href="{{ member.twitter }}">Twitter</a>
+						<a href="{{ member.linkedin }}">Linked In</a>
+					</div>
+				{% endfor %}
+				{% for member in members %}
+					<div class="col s12 l3 member">
+						<img class="team-member-image" src="{{ member.img }}">
+						<h5 class="member-name">{{ member.name }}</h5>
+						<h6 class="member-job">{{ member.job }}</h6>
+						<p>{{ member.resume }}</p>
+						<a href="{{ member.facebook }}">Facebook</a>
+						<a href="{{ member.twitter }}">Twitter</a>
+						<a href="{{ member.linkedin }}">Linked In</a>
+					</div>
+				{% endfor %}
+				{% for member in members %}
+					<div class="col s12 l3 member">
+						<img class="team-member-image" src="{{ member.img }}">
+						<h5 class="member-name">{{ member.name }}</h5>
+						<h6 class="member-job">{{ member.job }}</h6>
+						<p>{{ member.resume }}</p>
+						<a href="{{ member.facebook }}">Facebook</a>
+						<a href="{{ member.twitter }}">Twitter</a>
+						<a href="{{ member.linkedin }}">Linked In</a>
+					</div>
+				{% endfor %}
+				{% for member in members %}
+					<div class="col s12 l3 member">
+						<img class="team-member-image" src="{{ member.img }}">
+						<h5 class="member-name">{{ member.name }}</h5>
+						<h6 class="member-job">{{ member.job }}</h6>
+						<p>{{ member.resume }}</p>
+						<a href="{{ member.facebook }}">Facebook</a>
+						<a href="{{ member.twitter }}">Twitter</a>
+						<a href="{{ member.linkedin }}">Linked In</a>
+					</div>
 				{% endfor %}
 			</div>
 		</div>
