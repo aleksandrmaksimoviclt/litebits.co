@@ -1,11 +1,28 @@
 {% load staticfiles %}
-{% for member in members %}
-	{{ member.name }}
-	{{ member.last_name }}
-	{{ member.job }}
-	{{ member.resume }}
-	{{ member.facebook }}
-	{{ member.twitter }}
-	{{ member.linkedin }}
-	{{ member.img }}
-{% endfor %} 
+<html>
+	<head>
+		<title>Crrency - Transparent economic network</title>
+		<meta charset="UTF-8">
+		<meta name="description" content="CV WEB">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+		<link rel="icon" type="image/png" href="{% static 'website_app/img/favicon.png' %}" />
+		<!-- CSS  -->
+		<!-- Google Material Design Icons -->
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<!-- Materialize CSS Framework -->
+		<link href="{% static 'website_app/css/materialize.css' %}" type="text/css" rel="stylesheet" media="screen,projection"/>
+	</head>
+	<body>
+	{% for member in members %}
+		{{ member.name }}
+		{{ member.last_name }}
+		{{ member.job }}
+		{{ member.resume }}
+		{{ member.facebook }}
+		{{ member.twitter }}
+		{{ member.linkedin }}
+		{{ member.img }}
+	{% endfor %}
+	<div class="row"></div>
+	</body> 
+</html>
