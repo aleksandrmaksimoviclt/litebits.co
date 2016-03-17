@@ -1,11 +1,14 @@
 {% load staticfiles %}
 <html>
 	<head>
-		<title>Crrency - Transparent economic network</title>
+		<title>Litebits - we help you earn money!</title>
 		<meta charset="UTF-8">
-		<meta name="description" content="CV WEB">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="description" content="Some fancy text">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
 		<link rel="icon" type="image/png" href="{% static 'website_app/img/favicon.png' %}" />
+		<meta charset="utf-8" />
+  
 		<!-- CSS  -->
 		<!-- Google Material Design Icons -->
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -16,9 +19,9 @@
 	</head>
 	<body>
 		<div id="team">
-			<div class="row container">
+			<div class="team-container container">
 				{% for member in members %}
-					<div class="col s12 l3 member">
+					<div class="member">
 						<img class="team-member-image" src="{{ member.img }}">
 						<h5 class="member-name">{{ member.name }}</h5>
 						<h6 class="member-job">{{ member.job }}</h6>
@@ -34,7 +37,6 @@
 						</div>
 					</div>
 				{% endfor %}
-
 			</div>
 		</div>
 	

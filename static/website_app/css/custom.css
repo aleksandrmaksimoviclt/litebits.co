@@ -1,7 +1,15 @@
+.team-container{
+    margin:auto;
+    text-align: center;
+}
 .member {
     padding-left: 20px !important;
     padding-right: 20px !important;
     padding-bottom: 20px !important;
+    width:25%;
+    margin: 10px;
+    display: inline-block;
+    text-align: left;
 }
 .team-member-image {
     width: 100%;
