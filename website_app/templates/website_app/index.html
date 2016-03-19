@@ -18,7 +18,21 @@
 		<link href="{% static 'website_app/css/custom.css' %}" type="text/css" rel="stylesheet" media="screen,projection"/>
 	</head>
 	<body>
+	<section id="welcome">
+		<div class="welcome-message-wrapper">
+			WELCOME TO LITEBITS.<br>
+			WE CREATE WEB <span class="typed-message"></span>
+			<div id="typed-strings">
+				<p><strong>PAGES</strong></p>
+				<p><strong>APPS</strong></p>
+				<p><strong>SYSTEMS</strong></p>
+			</div>
+			
+		</div>
+	</section>
 		<div id="team">
+			<span class="team-heading">OUR TEAM</span>
+			<span class="team-subheading">That will help <span class="highlight-text">YOU</span> earn money</span>
 			<div class="team-container container">
 				{% for member in members %}
 					<div class="member">
@@ -47,5 +61,7 @@
 	<script src="{% static 'website_app/js/materialize.js' %}" type="text/javascript"></script>
 	<!-- Materialize.js Initialization -->
 	<script src="{% static 'website_app/js/init.js' %}" type="text/javascript"></script>
+	<!-- Materialize.js Initialization -->
+	<script src="{% static 'website_app/js/typed.js' %}" type="text/javascript"></script>
 	</body> 
 </html>
