@@ -18,77 +18,90 @@
 		<link href="{% static 'website_app/css/custom.css' %}" type="text/css" rel="stylesheet" media="screen,projection"/>
 	</head>
 	<body>
-	<header>
-		<div class="navbar-fixed">
-			<nav class="down">
-				<div class="nav-wrapper container">
-					<a href="#" class="brand-logo">Logo</a>
-					<ul id="nav-mobile" class="right hide-on-med-and-down">
-						<li><a href="sass.html">Sass</a></li>
-						<li><a href="badges.html">Components</a></li>
-						<li><a href="collapsible.html">JavaScript</a></li>
-					</ul>
-				</div>
-			</nav>
-		</div>
-	</header>
-	<main>
-		<section id="welcome">
-			<div class="welcome-message-wrapper container">
-				WELCOME TO LITEBITS.<br>
-				WE CREATE WEB <span class="typed-message"></span>
-				<div id="typed-strings">
-					<p>PAGES^1000</p>
-					<p>APPS^1000</p>
-					<p>SYSTEMS^1000</p>
-				</div>
-			</div>
-		</section>
 
-		<section id="whatweoffer">
+	<!--Preloader-->
 
-		</section>
-
-		<div id="team">
-			<span class="team-heading">OUR TEAM</span>
-			<span class="team-subheading">That will help <span class="highlight-text">YOU</span> earn money</span>
-			<div class="team-container container">
-				{% for member in members %}
-					<div class="member">
-						<img class="team-member-image" src="{{ member.img }}">
-						<h5 class="member-name">{{ member.name }}</h5>
-						<h6 class="member-job">{{ member.job }}</h6>
-						<p class="member-resume">{{ member.resume }}</p>
-						<div class="social-icon-wrapper">
-							<a href="{{ member.facebook }}"><img class="social-icon" src="{% static "website_app/img/facebook.png" %}"></a>	
-						</div>
-						<div class="social-icon-wrapper">
-							<a href="{{ member.twitter }}"><img class="social-icon" src="{% static "website_app/img/twitter.png" %}"></a>
-						</div>
-						<div class="social-icon-wrapper">
-							<a href="{{ member.linkedin }}"><img class="social-icon" src="{% static "website_app/img/linkedin.png" %}"></a>
-						</div>
+	<div id="preloader">
+	    <div class="preloader-wrapper big active">
+	      <div class="spinner-layer spinner-blue-only">
+	        <div class="circle-clipper left">
+	          <div class="circle"></div>
+	        </div><div class="gap-patch">
+	          <div class="circle"></div>
+	        </div><div class="circle-clipper right">
+	          <div class="circle"></div>
+	        </div>
+	      </div>
+	    </div>
+	</div>
+	<section id="content" class="hide">
+		<header>
+			<div class="navbar-fixed">
+				<nav class="down">
+					<div class="nav-wrapper container">
+						<a href="/" class="brand-logo">Logo</a>
+						<ul id="nav-mobile" class="right hide-on-med-and-down">
+							<li><a href="#projects">Projects</a></li>
+							<li><a href="#team">Team</a></li>
+							<li><a href="#contactus">Contact Us</a></li>
+						</ul>
 					</div>
-				{% endfor %}
+				</nav>
 			</div>
-		</div>
-	</main>
+		</header>
+		<main>
+			<section id="welcome">
+				<div class="welcome-message-wrapper container">
+					WELCOME TO LITEBITS.<br>
+					WE CREATE WEB <span class="typed-message"></span>
+					<div id="typed-strings">
+						<p>PAGES^500</p>
+						<p>APPS^500</p>
+						<p>SYSTEMS^500</p>
+						<p>FUTURE!^500</p>
+					</div>
+				</div>
+			
+				<a id="welcome-cta" class="waves-effect waves-light black btn"><i class="material-icons left">chat_bubble</i>Let's work together</a>
 
+			</section>
 
+			<section id="projects">
 
-	<div class="col hide-on-small-only m3 l2 fixed">
-      <ul class="section table-of-contents">
-        <li><a href="#welcome">Welcome</a></li>
-        <li><a href="#projects">Our Projects</a></li>
-        <li><a href="#team">Team</a></li>
-        <li><a href="#getintouch">Get In Touch</a></li>
-      </ul>
-    </div>
+			</section>
+
+			<div id="team">
+				<span class="team-heading">OUR TEAM</span>
+				<span class="team-subheading">That will help <span class="highlight-text">YOU</span> earn money</span>
+				<div class="team-container container">
+					{% for member in members %}
+						<div class="member">
+							<img class="team-member-image" src="{{ member.img }}">
+							<h5 class="member-name">{{ member.name }}</h5>
+							<h6 class="member-job">{{ member.job }}</h6>
+							<p class="member-resume">{{ member.resume }}</p>
+							<div class="social-icon-wrapper">
+								<a href="{{ member.facebook }}"><img class="social-icon" src="{% static "website_app/img/facebook.png" %}"></a>	
+							</div>
+							<div class="social-icon-wrapper">
+								<a href="{{ member.twitter }}"><img class="social-icon" src="{% static "website_app/img/twitter.png" %}"></a>
+							</div>
+							<div class="social-icon-wrapper">
+								<a href="{{ member.linkedin }}"><img class="social-icon" src="{% static "website_app/img/linkedin.png" %}"></a>
+							</div>
+						</div>
+					{% endfor %}
+				</div>
+			</div>
+		</main>
+	</section>
 
 	<!-- jQuery Library -->
 	<script src="https://code.jquery.com/jquery-2.2.1.min.js" integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00=" crossorigin="anonymous"></script>
 	<!-- Materialize.js -->
 	<script src="{% static 'website_app/js/materialize.js' %}" type="text/javascript"></script>
+	<!-- Preloader.js -->
+	<script src="{% static 'website_app/js/preloader.js' %}" type="text/javascript"></script>
 	<!-- Materialize.js Initialization -->
 	<script src="{% static 'website_app/js/init.js' %}" type="text/javascript"></script>
 	<!-- Typed.js Initialization -->
