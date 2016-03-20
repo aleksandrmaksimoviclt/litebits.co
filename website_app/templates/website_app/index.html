@@ -18,18 +18,37 @@
 		<link href="{% static 'website_app/css/custom.css' %}" type="text/css" rel="stylesheet" media="screen,projection"/>
 	</head>
 	<body>
-	<section id="welcome">
-		<div class="welcome-message-wrapper">
-			WELCOME TO LITEBITS.<br>
-			WE CREATE WEB <span class="typed-message"></span>
-			<div id="typed-strings">
-				<p><strong>PAGES</strong></p>
-				<p><strong>APPS</strong></p>
-				<p><strong>SYSTEMS</strong></p>
-			</div>
-			
+	<header>
+		<div class="navbar-fixed">
+			<nav class="down">
+				<div class="nav-wrapper container">
+					<a href="#" class="brand-logo">Logo</a>
+					<ul id="nav-mobile" class="right hide-on-med-and-down">
+						<li><a href="sass.html">Sass</a></li>
+						<li><a href="badges.html">Components</a></li>
+						<li><a href="collapsible.html">JavaScript</a></li>
+					</ul>
+				</div>
+			</nav>
 		</div>
-	</section>
+	</header>
+	<main>
+		<section id="welcome">
+			<div class="welcome-message-wrapper container">
+				WELCOME TO LITEBITS.<br>
+				WE CREATE WEB <span class="typed-message"></span>
+				<div id="typed-strings">
+					<p>PAGES^1000</p>
+					<p>APPS^1000</p>
+					<p>SYSTEMS^1000</p>
+				</div>
+			</div>
+		</section>
+
+		<section id="whatweoffer">
+
+		</section>
+
 		<div id="team">
 			<span class="team-heading">OUR TEAM</span>
 			<span class="team-subheading">That will help <span class="highlight-text">YOU</span> earn money</span>
@@ -53,7 +72,18 @@
 				{% endfor %}
 			</div>
 		</div>
-	
+	</main>
+
+
+
+	<div class="col hide-on-small-only m3 l2 fixed">
+      <ul class="section table-of-contents">
+        <li><a href="#welcome">Welcome</a></li>
+        <li><a href="#projects">Our Projects</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#getintouch">Get In Touch</a></li>
+      </ul>
+    </div>
 
 	<!-- jQuery Library -->
 	<script src="https://code.jquery.com/jquery-2.2.1.min.js" integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00=" crossorigin="anonymous"></script>
@@ -61,7 +91,9 @@
 	<script src="{% static 'website_app/js/materialize.js' %}" type="text/javascript"></script>
 	<!-- Materialize.js Initialization -->
 	<script src="{% static 'website_app/js/init.js' %}" type="text/javascript"></script>
-	<!-- Materialize.js Initialization -->
+	<!-- Typed.js Initialization -->
 	<script src="{% static 'website_app/js/typed.js' %}" type="text/javascript"></script>
+	<!-- Header 2.0 Initialization -->
+	<script src="{% static 'website_app/js/header 2.0.js' %}" type="text/javascript"></script>
 	</body> 
 </html>
