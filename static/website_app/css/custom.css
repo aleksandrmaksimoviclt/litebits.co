@@ -40,10 +40,24 @@ body{
 	text-align: center;
 }
 
-#welcome-cta{
-    visibility: hidden;
-    
+#welcome-cta-button{
+    display: none;
 }
+
+#welcome-cta-modal{
+    text-align: left;
+}
+
+/* Overriding modal footer button padding and margin*/
+.modal .modal-footer .btn, .modal .modal-footer .btn-large, .modal .modal-footer .btn-flat {
+    margin: 0px 0;
+}
+
+.modal .modal-footer {
+    padding: 0px 24px;
+}
+
+/*  END  */
 
 .down{
     top: 0px;
@@ -65,6 +79,10 @@ body{
     font-weight: bold;
     color:white;
     background-color: black;
+}
+
+i.material-icons.prefix {
+    line-height: inherit !important;
 }
 
 .team-container{

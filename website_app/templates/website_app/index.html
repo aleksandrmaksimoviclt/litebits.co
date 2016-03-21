@@ -62,8 +62,44 @@
 					</div>
 				</div>
 			
-				<a id="welcome-cta" class="waves-effect waves-light black btn"><i class="material-icons left">chat_bubble</i>Let's work together</a>
+				<button data-target="welcome-cta-modal" id="welcome-cta-button" class="btn black modal-trigger"><i class="material-icons left">chat_bubble</i>Let's work together</button>
 
+				 <!-- Modal Structure -->
+				<div id="welcome-cta-modal" class="modal">
+					<div class="modal-content">
+						<h4>Let's work together</h4>
+						<div class="row">
+							<form class="col s12">
+								<div class="row">
+									<div class="input-field col s12">
+										<i class="material-icons prefix">email</i>
+										<input id="email" type="email" class="validate">
+										<label for="email">Email</label>
+									</div>
+								</div>
+
+								<div class="row" style="margin-bottom: 0;">
+									<div class="input-field col s12">
+										<i class="material-icons prefix">message</i>
+										<textarea id="form-user-message" class="materialize-textarea"></textarea>
+										<label for="form-user-message">Describe your idea here...</label>
+									</div>
+								</div>
+
+								<div class="row">
+									<div style="margin-top: 0;" class="input-field col s12">
+										<input type="checkbox" id="email-confirmation"/>
+      									<label for="email-confirmation">I confirm that email is correct</label>
+									</div>
+								</div>
+
+							</form>
+					 	</div>
+					</div>
+					<div class="modal-footer">
+						<a href="#!" class=" modal-action modal-close waves-effect waves-green btn black">Agree</a>
+					</div>
+				</div>
 			</section>
 
 			<section id="projects">
